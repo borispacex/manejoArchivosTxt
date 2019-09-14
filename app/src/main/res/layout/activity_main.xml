@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SISTEMA DE CONTROL DE APORTES"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Carnet: "
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/carnet"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/buscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="buscar"
+                android:textSize="13dp"
+                android:onClick="buscar"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Paterno: "
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/paterno"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Materno: "
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/materno"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Nombres: "
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/nombres"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Telefono: "
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Aporte: "
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/aporte"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/detAportes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Det. Aportes"
+                android:textSize="13dp"
+                android:onClick="aportes"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Total Bs.: "
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/total"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/inicializar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Det. Aportes"
+                android:textSize="13dp"
+                android:onClick="inicializar"/>
+
+            <Button
+                android:id="@+id/busquedas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Det. Aportes"
+                android:textSize="13dp"
+                android:onClick="busquedas"/>
+
+            <Button
+                android:id="@+id/Finalizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Det. Aportes"
+                android:textSize="13dp"
+                android:onClick="finalizar"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mostrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
