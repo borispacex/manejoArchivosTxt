@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginLeft="25dp">
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -127,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
-                android:text="Aporte: "
+                android:text="# Aporte: "
                 android:layout_marginRight="5dp"/>
 
             <EditText
@@ -166,14 +167,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center">
 
 
             <Button
                 android:id="@+id/inicializar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Det. Aportes"
+                android:text="Inicializar"
                 android:textSize="13dp"
                 android:onClick="inicializar"/>
 
@@ -181,7 +183,7 @@
                 android:id="@+id/busquedas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Det. Aportes"
+                android:text="Busquedas"
                 android:textSize="13dp"
                 android:onClick="busquedas"/>
 
@@ -189,7 +191,7 @@
                 android:id="@+id/Finalizar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Det. Aportes"
+                android:text="Finalizar"
                 android:textSize="13dp"
                 android:onClick="finalizar"/>
         </LinearLayout>
